@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      color: #333;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 5px solid #357ABD;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    nav {
+      background-color: #f7f9fc;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4a90e2;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .intro {
+      background-color: #ffffff;
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .hobbies, .favorites {
+      margin-top: 2rem;
+      background-color: #e6f2ff;
+      padding: 1rem;
+      border-radius: 12px;
+    }
+
+    .button-area {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    button {
+      background-color: #4a90e2;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #357ABD;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f0f0f0;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hello, I'm Aarav!</h1>
+    <p>Welcome to My Personal Website 🌟</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About Me</a>
+    <a href="#">Hobbies</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="intro">
+    <h2>About Me</h2>
+    <p>Hi! I am Aarav, a student in Grade 6. I love learning new things, exploring fun activities, and sharing what I enjoy with friends and family. This is my personal website where you can know more about me!</p>
+  </section>
+
+  <section class="hobbies">
+    <h2>My Hobbies 🎨⚽📚</h2>
+    <ul>
+      <li>Drawing and painting</li>
+      <li>Playing football</li>
+      <li>Reading comic books</li>
+      <li>Playing Minecraft and Roblox</li>
+    </ul>
+  </section>
+
+  <section class="favorites">
+    <h2>Favorite Subjects 📘</h2>
+    <ul>
+      <li>Science (I love doing experiments!)</li>
+      <li>Mathematics (Numbers are fun!)</li>
+      <li>Art (Colors make me happy!)</li>
+    </ul>
+  </section>
+
+  <section class="button-area">
+    <h3>Click the button to get a fun fact!</h3>
+    <button onclick="showFunFact()">Show Fun Fact</button>
+    <p id="funFact" style="margin-top: 1rem; font-weight: bold;"></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Aarav's Website | Made with ❤️ in Grade 6
+  </footer>
+
+  <script>
+    const facts = [
+      "Octopuses have three hearts!",
+      "Honey never spoils. Archaeologists found 3000-year-old honey and it was still good!",
+      "A group of flamingos is called a 'flamboyance'!",
+      "Bananas are berries, but strawberries aren't!",
+      "Sharks have been around longer than dinosaurs!"
+    ];
+
+    function showFunFact() {
+      const fact = facts[Math.floor(Math.random() * facts.length)];
+      document.getElementById('funFact').textContent = fact;
+    }
+  </script>
+</body>
+</html>
